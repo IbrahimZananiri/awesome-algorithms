@@ -1,4 +1,4 @@
-# Dijkstra's Shortest Path Algorithm
+# Dijkstra's Single-Source Shortest Path Algorithm
 
 Family: [Graph](../)
 
