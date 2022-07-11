@@ -8,7 +8,7 @@ Find the shortest distance and shortest path to get from origin node to any reac
 
 ## Mechanism
 
-Eagerly, for each unvisited node, determine the shortest distance and the previous node in the most optimal path to get to that node from Origin node.
+Eagerly, for each unvisited node, determine the shortest accumulated distance and the previous node in the most optimal path to get to that node from Origin node.
 
 To determine the most optimal path to get to Destination node, walk back from Destination node's previous node until you reach Origin node, and reverse that path.
 
