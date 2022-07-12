@@ -4,13 +4,15 @@ Family: [Graph](../)
 
 ## Goal
 
-Find the shortest distance and shortest path to get from origin node to any reachable node on a weighted graph.
+Find the shortest distance and shortest path to get from Origin node to any reachable node on a weighted graph.
+
+Dijkstra's algorithm can also be used to determine shortest path to get from Origin to Destination node.
 
 ## Mechanism
 
 Eagerly, for each unvisited node, determine the shortest accumulated distance and the previous node in the most optimal path to get to that node from Origin node.
 
-To determine the most optimal path to get to Destination node, walk back from Destination node's previous node until you reach Origin node, and reverse that path.
+To determine the shortest path to get to Destination node, walk back from Destination node's previous node until you reach Origin node, and reverse that path.
 
 [Watch video on YouTube](https://www.youtube.com/watch?v=pVfj6mxhdMw)
 
