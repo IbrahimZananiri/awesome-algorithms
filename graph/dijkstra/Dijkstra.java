@@ -43,6 +43,11 @@ public class Dijkstra {
                     pq.add(targetHop);
                 }
             }
+            // Optimization:
+            // Stop early after the destination node has been found and processed
+            if (hop.currentNode == destination) {
+                return optimizedHops;
+            }
         }
         return optimizedHops;
     }
