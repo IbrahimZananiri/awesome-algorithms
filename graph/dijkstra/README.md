@@ -18,13 +18,17 @@ To determine the shortest path to get to Destination node, walk back from Destin
 
 [![Dijkastra's Algorithm Video](https://img.youtube.com/vi/pVfj6mxhdMw/0.jpg)](https://www.youtube.com/watch?v=pVfj6mxhdMw "Watch video on YouTube")
 
-
-## Applications
-
-- Maps Navigation
-
 ## Time Complexity
 
 O(E*Log(V))
 
 where E is the number of edges, and V is the number of vertices.
+
+## Applications
+
+- Maps Navigation
+- Network Routing
+
+## Resources
+
+[Google Maps: Innovation or Old News? - Post by Ibrahim Zananiri](https://medium.com/@ibrahim.zananiri/google-maps-origins-go-back-to-the-1950s-7334b3aa188f)
