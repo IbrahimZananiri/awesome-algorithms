@@ -10,7 +10,10 @@ An edge can be extended to hold a *weight* (e.g. road distance, connection laten
 A *path* on a graph is a sequence of connected nodes that allow traversal from vertex X to vertex Y.
 
 ## Graph Representation
-
+Graphs, with their vertices and edges, can be represented in different data structures, most commonly as:
+1. Adjacency Matrix
+2. Adjacency List
+3. Edge List
 
 
 ### Adjacency Matrix
