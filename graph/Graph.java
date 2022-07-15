@@ -5,7 +5,7 @@ public interface Graph<Vertex> extends Iterable<Vertex> {
     void removeVertex(Vertex vertex);
 
     // Edges Methods
-    boolean hasEdge(Vertex source, Vertex destination);
+    boolean containsEdge(Vertex source, Vertex destination);
     void addEdge(Vertex source, Vertex destination, int weight);
     void removeEdge(Vertex source, Vertex destination);
 
