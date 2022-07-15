@@ -77,7 +77,15 @@ List<Edge> edges = new ArrayList<>();
 - Social networks
 - Road networks
 
+## Classic Problems
+
+- Shortest Path Problem — What’s the shortest path between vertices A and B in a graph?
+- Network Flow — Does the directed path have enough capacity to carry the “flow” it receives at each node along the way?
+- Critical Path Analysis — In a system of interdependent activities, which is the most critical paths in terms of depencency?
+
+
 ## Graph Algorithms
+
 - Breadth-First Search
 - [Dijkstra's Shortest Path Algorithm](dijkstra)
 - Bellman-Ford-Moore Algorithm
