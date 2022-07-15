@@ -11,6 +11,8 @@ A *path* on a graph is a sequence of connected nodes that allow traversal from v
 
 ## Graph Representation
 
+
+
 ### Adjacency Matrix
 
 An adjacency matrix is a matrix (a 2D array) of V x V vertices. Each row and column represent a vertex.
@@ -19,7 +21,7 @@ If the value of any element a[row][column] is True (or non-falsey), it represent
 
 For undirected graphs, the matrix would be symmetric around the diagonal. Otherwise, for a directed graph, the matrix would be asymmetric.
 
-The value can be a boolean indicating the presence of a relationship, or numeric, holding the weight value of the directed edge like the representation below:
+The value can be a boolean indicating the presence of a relationship, or numeric, holding the weight value of the directed edge, like the representation below:
 
 |   | 0 | 1 | 2 | 3 |
 |---|---|---|---|---|
@@ -30,18 +32,43 @@ The value can be a boolean indicating the presence of a relationship, or numeric
 
 Adjacency matrices are fast in single-edge look up, as the array data structure provides constant time random access to graph[from][to] values. The tradeoff is the space requirement for the 2-D array.
 
+In Java:
+
+```java
+int[] graph = new int[V][V];
+```
+
 ### Adjacency List
 
-An adjacency list is an array (or map) keyed by Vertex identifier, with values being lists of vertices that have a relationship (edge) with the source node.
+A vertex is *adjacent* to another vertex if there is an edge connecting them.
+
+An adjacency list is an array keyed by Vertex identifier, with values being lists of vertices that have a relationship (edge) with the source node.
 
 Adjacency List representation is efficient in terms of space.
+
+In Java:
+
+```java
+List<Integer>[] graph = new List[5];
+```
+
+or with edge weights:
+
+```java
+record OutgoingEdge(int targetNode, int weight);
+List<OutgoingEdge>[] graph = new List[V];
+```
 
 ### Edge List
 
 A list of all edges on a graph, where an edge indicates the source and destination nodes, as well as an optional edge weight.
 
-This representation is ideal for sparce graphs that do not hold many edges.
+This representation is ideal for *sparce graphs* that do not hold many edges.
 
+```java
+record Edge(int sourceNode, int targetNode, int weight);
+List<Edge> edges = new ArrayList<>();
+```
 
 ## Use cases
 - Social networks
