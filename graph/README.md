@@ -14,3 +14,4 @@ Edges can be extended to hold weights (e.g. road distance, connection latency, c
 ## Algorithms
 - Breadth-First Search
 - [Dijkstra's Shortest Path Algorithm](dijkstra)
+- Bellman-Ford-Moore Algorithm
